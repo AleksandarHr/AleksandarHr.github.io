@@ -1,0 +1,20 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="projects">
+  {% for prj in site.projects %}
+    <article class="project">
+
+      <h1><a href="{{ site.baseurl }}{{ prj.url }}">{{ prj.title }}</a></h1>
+
+      <div class="entry">
+        {{ prj.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ prj.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
