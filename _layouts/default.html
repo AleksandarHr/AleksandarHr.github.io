@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- <html> -->
+<html class="dark">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -8,6 +9,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="/scripts/theme_toggle.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -19,16 +21,31 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
+          <div class="site-logo">
+              <div class="site-logo__toggle-container">
+                <img id="light-icon" src="https://gist.githubusercontent.com/pazdera/7d5bbb4146699cc34752f0aec4348dc1/raw/668dc04ac4b82bad3df39f98a191e575cf5da977/light.svg">
+                <img id="dark-icon" src="https://gist.githubusercontent.com/pazdera/7d5bbb4146699cc34752f0aec4348dc1/raw/668dc04ac4b82bad3df39f98a191e575cf5da977/dark.svg">
+                <label class="toggle-switch" for="toggle-input">
+                  <input id="toggle-input" type="checkbox">
+                  <div class="toggle-switch__control"></div>
+                </label>
+              </div>
+            <div class="site-logo__logo">
+            </div>
+          </div>
+          <!-- <a href="{{ site.baseurl }}/" class="site-avatar">
+            <img src="{{ site.avatar }}" />
+          </a> -->
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
           <nav>
+
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/projects">Projects</a>
           </nav>
         </header>
       </div>
