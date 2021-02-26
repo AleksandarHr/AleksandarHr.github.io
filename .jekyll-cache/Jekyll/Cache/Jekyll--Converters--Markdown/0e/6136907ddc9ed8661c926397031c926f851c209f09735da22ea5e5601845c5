@@ -1,0 +1,54 @@
+I"<<p>Prototype for a 2D tile-based puzzle game made in Unity</p>
+
+<h1 id="2d-tile-based-puzzle-game">2D Tile-Based Puzzle Game</h1>
+<p>2D tile-based puzzle game</p>
+
+<h1 id="mechanics">Mechanics</h1>
+<p>Some mechanics</p>
+
+<h2 id="clone">Clone</h2>
+<p>Blue clone</p>
+
+<h2 id="key">Key</h2>
+<p>Yellow key</p>
+
+<h2 id="one-way-gates">One-way gates</h2>
+<p>Green gates</p>
+
+<h1 id="level-design">Level Design</h1>
+<p>Level design</p>
+
+<h2 id="tile-types">Tile Types</h2>
+<p>Different tile types</p>
+
+<ul>
+  <li>Regular tiles &lt;p align="center"&gt;<img width="25%" src="/images/ElseWhere/GateTemp.jpg" />&lt;/p&gt;</li>
+  <li>Dead tiles</li>
+  <li>Wall tiles</li>
+  <li>Red door tiles</li>
+  <li>Single push-down</li>
+  <li>Double push-down</li>
+  <li>Yellow door tiles</li>
+  <li>Teleport tiles</li>
+  <li>Ice tiles</li>
+</ul>
+
+<h2 id="puzzles">Puzzles</h2>
+<p>Various puzzles</p>
+
+<h1 id="story--npc">Story &amp; NPC</h1>
+<p>TODO :)</p>
+
+<p align="center"><img width="75%" src="/images/ElseWhere/ElseWhere_1.jpg" /></p>
+
+<p align="center"><img width="75%" src="/images/ElseWhere/ElseWhere_2.jpg" /></p>
+
+<p align="center"><img width="75%" src="/images/ElseWhere/ElseWhere_3.jpg" /></p>
+
+<p align="center">
+  <iframe height="405px" width="720px" display="block" src="https://www.youtube.com/embed/e9iNxfWE7ig" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<!-- Watch the full [walkthrough](https://www.youtube.com/watch?v=e9iNxfWE7ig){:target="_blank"} of the ElseWhere prototype. -->
+<p>Explore the source code <a href="https://github.com/AleksandarHr/ElseWhere" target="_blank">here</a>.</p>
+:ET

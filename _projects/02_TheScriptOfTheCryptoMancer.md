@@ -50,4 +50,9 @@ As an improvement, we are presented with a commitment scheme based on a hash fun
 Given the way this commitment scheme is constructed, we can use a collision of the hash function to perform a forgery attack such that we can commit to a value *x* but create a valid opening for value *y*, where *hash(x) = hash(y)*.
 
 # Tongue Twister
-[The Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister){:target="_blank"} is the most widely used *pseudorandom number generator*.
+This one is again a very notation-heavy problem worthy of a separate post, so I will just give an overview and some relevant resources. [The Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister){:target="_blank"} is the most widely used *pseudorandom number generator* and is the default one in numerous systems such as Python, Maple, MATLAB, SageMath, R, Ruby, and more. There are a few core components behind the algorithm:
+ * Matrix recurrence relation - a simple [recurrence relation](https://en.wikipedia.org/wiki/Recurrence_relation){:target="_blank"} is used to generate a sequence of numbers
+ * An invertible [tempering matrix](https://en.wikipedia.org/wiki/Tempered_representation){:target="_blank"} over a binary field
+ * A twisted generalised [linear-feedback shift register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register){:target="_blank"} of rational normal form - more generally, a type of shift register whose input bit is a linear function of its previous state <br/>
+
+ The Mersenne Twister is parametrized by public algorithmic constants, usually chosen to satisfy certain conditions. The algorithm is first seeded using some of the constants. Then, in order to get the *N-th* random number the state is updated *N* times performing some *tempering* and, under certain conditions, a *twist transformation*. After this bulk of terminology and lack of details, the key insight is that, given sufficiently many previous random output numbers, it is possible to predict future once.
