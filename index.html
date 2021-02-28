@@ -2,10 +2,50 @@
 layout: page
 ---
 
-<p  align="center"> <img width="40%" src="../images/About_Photo.jpg"> </p>
+<figure>
 
-<h1>Some information about you!</h1>
+    <p><img width="40%" src="../images/About_Photo.jpg" id="about_photo">
+  <figcaption>Photo Credits: Nick Roberson</figcaption>
+  <figcaption>@Grinnell, IA</figcaption>
 
-<h1> More Information</h1>
+</figure>
 
-<h1> Projects</h1>
+
+<p>
+My name is Aleksandar, born and raised in Burgas, Bulgaria. I did my Bachelor's at Grinnell College in Grinnell, IA, USA. After that, I lived and work in Cork, Ireland for a bit over a year which then led me to Switzerland where I am currently finishing a Master's in Computer Science at the <i> Ecole Polytechnique Fédérale de Lausanne </i>. <br/>
+</p>
+<p>
+My main focus in the past few years has been exploring the vast world of informatics. In the meantime, I try to stay true to my long-term passions for music and exploring the world by digging for new obsucre bands & attending music festivals, (hitch)hiking and road tripping (recommended pre-requisite: a pre-/post- covid world). Rock climbing is the most recently discovered interest of mine - unfortunately, it has also taken a hit due to the pandemic, but am eager to get back to it soon <a style="font-size: 25px">&#129495;</a>. <br/>
+</p>
+<p>
+If you are curious to learn more about my background, please check out my <a href="pdf/AleksandarHrusanov_Resume.pdf">CV</a> and the <a href="{{ site.baseurl }}/projects"> projects </a> section of the website. For random musings, head to my <a href="{{ site.baseurl }}/blog"> blog </a> which I hope to maintain more often than not.
+</p>
+<p>
+If you want to exchange some music recommendations, to geek out on craft beer & brewing (a TBC undertaking of mine), or simply want to chat, do not hesitate to reach out.
+</p>
+
+<h2><p> Song of the Day: <script> document.write(new Date().toDateString()); </script> </p></h2>
+{% include youtube_embed.html id="DMUuLuwmmBg" %}
+
+
+<!-- <button type="button" class="collapsible">Previous Song of the Day's</button>
+<div class="collapsible-content">
+  <p>First song - Blah</p>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script> -->

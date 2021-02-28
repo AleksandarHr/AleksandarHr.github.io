@@ -3,10 +3,12 @@ layout: project
 title: The Script of The CryptoMancer
 ---
 
-I took a course in *Cryptography* during the last semester of my Master's program and I would say it was one of the most challenging subjects I have faced. For one, we covered a vast amount of topics - *Diffie-Hellman*, *RSA*, *Elliptic Curves*, *Symmetric Encryption* among others. More often than not it was all accompanied by significant focus on algebra, probability theory, combinatorics, and complexity theory. While challenging, working on this course was also quite rewarding especially when dealing with assignments. The problems would often cause you to loose track of time scratching your brain while immersed into breaking some cryptosystem at 3:00a.m.
-Here I briefly present some of the problems that I found interesting without going into too much details. I will also leave links with relevant resources for further reading. <br/>
+I took a course in *Cryptography* during the last semester of my Master's program and I would say it was one of the most challenging subjects I have faced. For one, we covered a vast amount of topics - *Diffie-Hellman*, *RSA*, *Elliptic Curves*, *Symmetric Encryption* among others. More often than not it was all accompanied by significant focus on algebra, probability theory, combinatorics, and complexity theory. While challenging, working on this course was also quite rewarding especially when dealing with assignments. The problems would often cause you to loose track of time scratching your brain while immersed into breaking some cryptosystem at 3:00a.m. <br/>
 
-**For detailed problem statements and solutions please refer to the [github repository](https://github.com/AleksandarHr/Cryptography-Security){:target="_blank"}.**
+Here I briefly present some of the problems that I found interesting without going into too much details. I will also leave links with relevant resources for further reading. <br/>
+**For detailed problem statements and solutions please refer to the [github repository](https://github.com/AleksandarHr/Cryptography-Security){:target="_blank"}.** <br/>
+
+Assignment statements and images below credited to Professor Serge Vaudenay and his team of TAs.
 
 # Tool - Lateralus
 Often times cryptographic algorithms handle large numbers and usually perform arithmetic operations in a certain algebraic groups (e.g. modulo a given positive prime number). In this problem, a variant of Diffie-Hellman key exchange protocol based on the Fibonacci sequence. Both the public keys and the secret keys of the two parties are Fibonacci numbers. Briefly, given their Fibonacci number *pk_B* in the chosen group and our Fibonacci number *sk_A*, the *sk_A-th* Fibonacci number after *pk_B* is the derived key.

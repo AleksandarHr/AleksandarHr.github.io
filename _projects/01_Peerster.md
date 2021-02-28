@@ -52,8 +52,6 @@ Peerster builds a blockchain of shared files to ensure a globally agreed on name
 ## Remarks
 A small part of the initial codebase has been taken from an anonymous student (allowed by the professor), due to better design and lack of time to restructure my original code for the respective functionality. Since then, the code in question has been adapted, changed, and optimized as needed.
 
-Explore the source code [here](https://github.com/AleksandarHr/Peerster){:target="_blank"}.
-
 ## Poorster - Group Project Extension
 Very briefly, the project extension focuses on creating clusters of peers. An existing cluster can accept new members or remove current ones using a majority voting protocol. Inside a cluster, peers can communicate with _confidentiality_ and _anonymity_. Voice over Internet Protocol (VoIP) support was also implemented. For more details, you can watch the project presentation followed by a demo:
 

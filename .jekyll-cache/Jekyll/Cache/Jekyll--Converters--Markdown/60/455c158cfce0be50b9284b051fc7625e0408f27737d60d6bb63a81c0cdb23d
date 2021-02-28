@@ -1,0 +1,44 @@
+I"#<p>A prototype for a 2D tile-based puzzle game made in Unity.</p>
+
+<h1 id="2d-tile-based-puzzle-game">2D Tile-Based Puzzle Game</h1>
+<p><em>ElseWhere</em> is a prototype of a 2D tile-based top-down puzzle game. You, the player, controls a single character which moves from one room to another. In every room you have to solve a puzzle in order to enter the next one. There are a few rooms with no puzzles which are referred to as the <em>hub rooms</em> (see below). The puzzles rely on a few key mechanics described below. Since part of the fun is that the player has to figure out the mechanics of the levels and of the character - stop reading, reach out to me so I can send you the playable prototype for you to playthrough, and then come back to read the rest (a.k.a. <strong>spoiler alert</strong>).</p>
+
+<h1 id="level-design">Level Design</h1>
+<p>The levels design consist of a set of tiles each with certain characteristics. These characteristics along with the mechanics specific to the character construct the respective puzzles.</p>
+
+<h2 id="tile-types">Tile Types</h2>
+<p>There are various types of tiles which the player encounters throughout the game. Part of the fun is for the player to explore the mechanics behind each tile type, so what :</p>
+
+<ul>
+  <li>Regular tiles <img width="3%" src="/images/ElseWhere/RegularTile.png" />: the player can freely walk on those.</li>
+  <li>Hole tiles <img width="3%" src="/images/ElseWhere/Hole.png" />: if the player walks on a hole tile, the character is respawned at the level starting location.</li>
+  <li>Wall tiles <img width="3%" src="/images/ElseWhere/Wall.png" />: the player can never move through this tile.</li>
+  <li>Red door tiles <img width="3%" src="/images/ElseWhere/GateTemp.jpg" />: the player needs to unlock the door to move through it</li>
+  <li>Single push-down panel <img width="3%" src="/images/ElseWhere/PanelCrumbleUnbroken.png" /> <img width="3%" src="/images/ElseWhere/PanelCrumbleBroken.png" />: the player needs to stand on top of this once to open a red door.</li>
+  <li>Double push-down panel <img width="3%" src="/images/ElseWhere/PanelDoubleCrumbleUnbroken.png" /> <img width="3%" src="/images/ElseWhere/PanelDoubleCrumbleBroken.png" />: the player and its clone must stand on top of two such tiles simultaneously to open a red door.</li>
+  <li>One-way Gate <img width="3%" src="/images/ElseWhere/OneWayGate.png" />: the player can only walk through this tile in the direction specified by the arrow.</li>
+  <li>Yellow door tiles  <img width="3%" src="/images/ElseWhere/KeyedGate.png" />: the player needs to pickup the yellow key in order to unlock the yellow door.</li>
+  <li>Yellow door key tile  <img width="3%" src="/images/ElseWhere/Key.png" />: the key which unlocks the yellow door.</li>
+  <li>Teleport tiles <img width="3%" src="/images/ElseWhere/Teleporter.png" />: if the player steps on such a tile it will be teleported to a location of another specific such tile in the same level.</li>
+  <li>Ice tiles <img width="3%" src="/images/ElseWhere/Ice.png" />: when the player enters an ice tile it will continue to slide in the same direction until there are no more ice tiles.</li>
+</ul>
+
+<h1 id="mechanics">Mechanics</h1>
+<p>The main character mechanic is a <em>cloning ability</em>. The player can spawn a clone of itself - initially, the clone is a floating blue sphere which after a cool-down period of a few seconds or a 4 tile movements a blue character clone is spawned. This ability is crucial for solving some of the puzzles - e.g. puzzles which have double push-down panels or puzzles which require the character to reach a part of the level which is cut-off by hole tiles. While this mechanic is simple it allowed for some quite interesting and challenging puzzles. <br />
+<strong>TODO:</strong> Another character mechanic which was only a work-in-progress by the end of this project was what we called a <em>blow-back</em> ability. The <em>blow-back</em> ability could be used to either push certain <em>movable</em> tiles around or to push back the character itself away from <em>static</em> tiles.</p>
+
+<h1 id="story--npc">Story &amp; NPC</h1>
+<p><strong>TODO:</strong> Something which can be considered crucial for a successful game (also recognized by us as such) is the game story. Our plan was for the game story to be told mainly through NPCs (e.g. non-playable characters) which would be positioned in the so-called <em>hub rooms</em> - the rooms which have no puzzles in them but rather serve as a transitions between parts of the game (and parts of the story).</p>
+
+<h1 id="walkthrough">Walkthrough</h1>
+<p>Below you can watch a complete walkthrough for the game prototype.</p>
+<p align="center">
+  <iframe height="405px" width="720px" display="block" src="https://www.youtube.com/embed/e9iNxfWE7ig" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<p><em>I have no rights on the music: Meditation Spa - Celtic Spa - Long a Growing With Gentle Birdsong for Calm and Peaceful Relaxation.</em> <br /></p>
+
+<p>Explore the source code <a href="https://github.com/AleksandarHr/ElseWhere" target="_blank">here</a>. <br />
+The sprites for the character were taken from the <a href="https://learn.unity.com/project/2d-roguelike-tutorial" target="_blank">2D Roguelike Tutorial</a>. <br />
+<em>The project was implemented in collaboration with Jerry Chen, Tyler Dewey, and Eric Raymaker.</em></p>
+:ET

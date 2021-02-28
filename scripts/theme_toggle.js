@@ -2,6 +2,10 @@
 
 var toggle, logo, container, darkIcon, lightIcon, theme;
 
+var preferredTheme = localStorage.getItem('preferred-theme');
+setTheme(preferredTheme, false);
+// updateUI(preferredTheme);
+
 window.onload = function(){
   toggle = document.getElementById('toggle-input');
   lightIcon = document.getElementById('light-icon');
@@ -21,8 +25,8 @@ window.onload = function(){
   /* Set theme on load */
   // const osPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   // const preferredTheme = localStorage.getItem('preferred-theme') || osPreference;
-  preferredTheme = 'dark';
-  setTheme(preferredTheme, false);
+  preferredTheme = localStorage.getItem('preferred-theme');
+  setTheme(preferredTheme, true);
   updateUI(preferredTheme);
 }
 
